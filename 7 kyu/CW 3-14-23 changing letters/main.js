@@ -22,12 +22,8 @@ function swap (string) {
     let capitalVowels = '';
   
     for (let i = 0; i < string.length; i++) {
-      if (vowels.includes(string[i])) {
-        capitalVowels += string[i].toUpperCase();
-      } else {
-        capitalVowels += string[i];
-      }
-    }
+      vowels.includes(string[i]) ? capitalVowels += string[i].toUpperCase() : capitalVowels += string[i]
+    };
     
     return capitalVowels;
 }
